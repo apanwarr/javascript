@@ -23,3 +23,14 @@ console.log(myTimeStamp);
 console.log(d2.getTime());
 console.log(Date.now()/1000);
 console.log(Math.round(Date.now()/1000));
+
+let newDate=new Date();
+console.log(newDate);
+console.log(newDate.getMonth());
+console.log(newDate.getDay());
+
+console.log(`Day is ${newDate.getDay()} and the time is ${newDate.getTime()}`);
+
+newDate.toLocaleString('default',{
+    weekday: 'long'
+});
