@@ -38,3 +38,23 @@ const myfun = function (){
 }
 
 console.log(myfun);
+
+// *************************************** //
+
+//2 types of memory in js
+// Stack use in (Primitive) , Heap use in (Non-Primitive)
+
+let name="shivin";   //Stack
+let name2=name;
+name2 = "Ika";
+console.log(name);
+console.log(name2);
+
+let user1={
+    email:"user.com",
+    id:101
+}
+let user2=user1;
+user1.email="Shop.com";
+console.log(user1);
+console.log(user2);
