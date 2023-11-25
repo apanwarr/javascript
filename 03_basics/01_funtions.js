@@ -45,3 +45,38 @@ function cricket(pname = "Virat"){
     }
 }
 console.log(cricket("Gill")); // Gill overwrite the virat in this <----
+
+function p1(...num1){
+    return num1;
+}
+console.log(p1(200));
+console.log(p1(200,400,500,600));
+
+function p1(v1,v2,...num1){
+    return num1;
+}
+console.log(p1(200,220,300,400,500));   // ------important point
+
+// how to pass object in function ----------------->
+const user={
+    name:"Ashish",
+    age:20
+}
+function handleObject(anyObject){
+    console.log(`${anyObject.name} bro howare uuuu `);
+}
+handleObject(user);
+
+handleObject({
+    name:"Abhishek",
+    age:20
+})
+
+
+// How to pass array in functions --------------->
+
+const arr=["Ashish","abhishek","Amit"];
+function handleArray(anyArray){
+    console.log(anyArray[1]);
+}
+console.log(handleArray([100,200,300,400]));
