@@ -1,0 +1,40 @@
+//  if
+
+var a=2;
+if(a<5){
+    console.log("a is small");
+}
+else{
+    console.log("a is greater");
+}
+
+// To know more..
+// Please use some opeartors for this ---------------
+
+//  Switch
+
+switch (num=2) {
+    case 1:
+        console.log("a is not 1");
+        break;
+    case 2:
+        console.log("Yes, a is 2");
+        break;
+    default:
+        console.log("Error");
+        break;
+}
+
+// also know more..
+// do more ques. on operators
+
+// ------------Nulliesh...
+
+let val1;
+val1=4??8; // at this point it will by-default give 1 value...
+val2=null??3;  // it will check safety and give gives another values
+val3=undefined??6;  // it will also give another values...
+
+console.log(val1);
+console.log(val2);
+console.log(val3);
