@@ -47,3 +47,18 @@ console.log(Object.values(tinder1));
 console.log(Object.entries(tinder1));
 
 console.log(tinder1.hasOwnProperty('name'));
+
+// destructure object
+
+const course={
+    cname:"js fun",
+    price:1000,
+    tuitor:"leo"
+}
+console.log(course.cname);
+console.log(course['tuitor']);
+
+const {cname}=course;
+console.log(cname);
+
+// ******************* API *********************
