@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button id="click" onclick="clicked()">Hey</button>
+    <h1 onmouseover="over(this)" onmouseout="out(this)" style="border: 2px solid black; width: 100px;">Hello</h1>
+
+
+    <script>
+        function clicked(){
+            document.write("I am Clicked Now");
+        }
+
+        window.onload = function (){
+            alert("heyyyy")
+        }
+
+        function over(x){
+            x.innerHTML = "No";
+            x.style.color = "red";
+        }
+        function out(x){
+            x.innerHTML = "Hello";
+            x.style.color = "blue";
+        }
+    </script>
+</body>
+</html>
