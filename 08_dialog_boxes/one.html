@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dialog Boxes</title>
+</head>
+<body>
+    
+    <script>
+        // -------- alert function [It's used for to display pop or output of msg...] ---------
+        alert("Hey! This is alert..")
+
+        // -------- prompt function [It's used for to take input from user...] ----------------
+        let a=prompt("Hello,Would u say something.?","guest")
+        document.write(a);
+
+        // -------- confirm function [It's used for to take confirmation from the user...] ----
+        let deletePost = confirm("Do you really want to delete this post..?");
+        if(deletePost == false){
+            document.write("<br> Good Choice !");
+            document.write("<br> Post Not delete");
+        }
+        else {
+            document.write("<br> Oh No! Post Deleted..");
+        }
+    </script>
+</body>
+</html>
